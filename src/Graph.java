@@ -14,7 +14,6 @@ public class Graph {
     private final Map<Character, List<Edge>> adjList;
 
     public Graph() {
-        // Использование TreeMap гарантирует сортировку вершин по алфавиту для красивого вывода
         this.adjList = new TreeMap<>();
     }
 
@@ -38,7 +37,6 @@ public class Graph {
             System.out.print(entry.getKey() + " -> ");
             List<String> edgesStr = new ArrayList<>();
             List<Edge> edges = new ArrayList<>(entry.getValue());
-            // Сортировка соседей по алфавиту для консистентности вывода
             edges.sort(Comparator.comparingInt(e -> e.target));
 
             for (Edge edge : edges) {

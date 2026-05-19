@@ -52,7 +52,6 @@ public class Task3 {
             }
         }
 
-        // Сортируем вершины для красивого вывода результатов
         List<Character> vertices = new ArrayList<>(graph.getAdjList().keySet());
         Collections.sort(vertices);
 
