@@ -2,14 +2,12 @@ public class Task1 {
     public static Graph createGraph() {
         Graph graph = new Graph();
 
-        // Создание вершин
         graph.addVertex('A');
         graph.addVertex('B');
         graph.addVertex('C');
         graph.addVertex('D');
         graph.addVertex('E');
 
-        // Добавление ребер (u, v, weight) по вашему ТЗ
         graph.addEdge('B', 'A', 1);
         graph.addEdge('C', 'A', 6);
         graph.addEdge('D', 'C', 8);
