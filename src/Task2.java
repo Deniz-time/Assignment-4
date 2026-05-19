@@ -14,7 +14,6 @@ public class Task2 {
         Set<Character> bfsVisited = bfs(graph, startNode);
         printVisited(bfsVisited);
 
-        // Ответ на теоретический вопрос
         System.out.println("\n[Report Question Answer]:");
         System.out.println("Which algorithm is better suited for finding the shortest path in an unweighted graph, and why?");
         System.out.println("Answer: BFS (Breadth-First Search) is definitely better suited.");
