@@ -25,7 +25,7 @@ public class Graph {
         addVertex(u);
         addVertex(v);
         adjList.get(u).add(new Edge(v, weight));
-        adjList.get(v).add(new Edge(u, weight)); // Так как граф неориентированный
+        adjList.get(v).add(new Edge(u, weight));
     }
 
     public Map<Character, List<Edge>> getAdjList() {
