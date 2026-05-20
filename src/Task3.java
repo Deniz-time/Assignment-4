@@ -24,7 +24,6 @@ public class Task3 {
         Map<Character, Character> predecessors = new HashMap<>();
         PriorityQueue<NodePair> minHeap = new PriorityQueue<>();
 
-        // Инициализация бесконечностями
         for (char vertex : graph.getAdjList().keySet()) {
             distances.put(vertex, Integer.MAX_VALUE);
             predecessors.put(vertex, null);
